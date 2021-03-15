@@ -7,6 +7,18 @@ body {
     letter-spacing: 0.03em;
 }
 
-.center {
-    
+/* BEGIN Main Menu */
+
+#main-menu {
+    background-color: #00f;
 }
+
+.main-menu-entry {
+    background-color: #fff;
+}
+
+.main-menu-close-btn {
+    background-color: #aaa;
+}
+
+/* END Main Menu */
