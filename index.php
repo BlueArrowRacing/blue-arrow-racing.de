@@ -15,14 +15,14 @@
 	<meta property="og:url" content="https://bluearrowracing.github.io/">
 	<meta property="og:title" content="Willkommen bei Blue Arrow Racing!">
 	<meta property="og:description" content="Blue Arrow Racing">
-	<meta property="og:image" content="img/Photos/Landesmeister.png">
+	<meta property="og:image" content="/img/photos/2.jpg">
 
     <!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="https://bluearrowracing.github.io/">
 	<meta property="twitter:title" content="Willkommen bei Blue Arrow Racing!">
 	<meta property="twitter:description" content="Blue Arrow Racing">
-	<meta property="twitter:image" content="img/Photos/Landesmeister.png">
+	<meta property="twitter:image" content="/img/photos/2.jpg">
     <meta name="twitter:dnt" content="on">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,41 +49,14 @@
 
 </head>
 <body>
-    <h1 class="center">Blue Arrow Racing neue Seite</h1>
-    <h2 class="center">Work in progress...</h2>
-
-    <button class="main-menu-open-btn">Menü</button>
-    
-    <div id="main-menu">
-        <div id="main-menu-content">
-            <a href="/">
-                <img class="main-menu-icon" src="/img/logos/logo_icon_white.png">
-                <div class="main-menu-title">
-                    <h1>Blue Arrow Racing</h1>
-                </div>
-            </a>
-            <div class="main-menu-entry">
-                <a href="/">Home</a>
-            </div>
-            <div class="main-menu-entry">
-                <a href="/Artikel">Artikel</a>
-            </div>
-            <div class="main-menu-entry">
-                <a href="/Photos">Photos</a>
-            </div>
-            <div class="main-menu-entry">
-                <a href="/Sponsoren">Sponsoren</a>
-            </div>
-            <div class="main-menu-entry">
-                <a href="/Sponsor-werden">Sponsor werden</a>
-            </div>
-            <div class="main-menu-entry">
-                <a href="Über uns & Kontakt">Über uns & Kontakt</a>
-            </div>
-            <button class="main-menu-close-btn">×</div>
+    <div class="welcome-banner">
+        <div class="welcome-banner-content">
+            <h1>WILLKOMMEN BEI BLUE ARROW RACING!</h1>
+            <h2>Das Formel 1 in der Schule Team des Ökumenischen Gymnasiums zu Bremen</h2>
         </div>
     </div>
-    <script src="/js/main-menu.js"></script>
+
+    <?php readfile("html/main-menu.html");?>
 
     <div class="twitter-embed">
         <a class="twitter-timeline" data-theme="light" href="https://twitter.com/BlueArrowRacing?ref_src=twsrc%5Etfw">Tweets by BlueArrowRacing</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 

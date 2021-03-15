@@ -5,6 +5,8 @@ body {
     color: #17242eFF;
     background-color: transparent;
     letter-spacing: 0.03em;
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -80,16 +82,50 @@ a {
     border-color: transparent;
     font-size: 1.3em;
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 2vh;
+    right: 2vh;
+}
+
+button:hover {
+    color: #777;
 }
 
 /* END Main Menu */
 
+/* BEGIN index.php */
+
+.welcome-banner {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background: url("/img/photos/Renderings/explosion1.png");
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-banner-content {
+    width: max-content;
+    height: max-content;
+    margin: auto;
+}
+
+.welcome-banner-content > * {
+    text-align: center;
+}
+
+/* END index.php */
+
 /* BEGIN Twitter */
 
 .twitter-embed {
-    padding: auto;
+    margin-top: 10vh;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: auto;
 }
 
 /* END Twitter*/
