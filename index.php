@@ -51,14 +51,29 @@
 <body>
     <div class="welcome-banner">
         <div class="welcome-banner-content">
-            <h1>WILLKOMMEN BEI BLUE ARROW RACING!</h1>
-            <h2>Das Formel 1 in der Schule Team des Ökumenischen Gymnasiums zu Bremen</h2>
+            <h1 class="center">WILLKOMMEN BEI BLUE ARROW RACING!</h1>
+            <h2 class="center">Das Formel 1 in der Schule Team vom Ökumenischen Gymnasium zu Bremen</h2>
         </div>
     </div>
+
+    <hr>
+
+    <p class="small-text center">Schauen Sie sich gerne etwas auf unserer Website um, bei Fragen stehen wir Ihnen gerne zur Verfügung.<br> Kontaktieren Sie uns über das Kontaktformular auf unser "Über uns" Seite. </p>
+
+    <hr>
+
+    <ul class="small-text center no-dots">
+        <li><a href="https://twitter.com/BlueArrowRacing" target="_blank"><img src="/img/logos/twitter_icon_filled.png" class="small-icon">Twitter</a></li>
+        <li><a href="https://www.youtube.com/channel/UCo2Jd5hqyqVfyZ5II1XK9jg" target="_blank"><img src="/img/logos/youtube_icon_filled.png" class="small-icon">Youtube</a></li>
+        <li><a href="https://www.instagram.com/p/CLkEfNHB6Nn" target="_blank"><img src="/img/logos/instagram_icon_filled.png" class="small-icon">Instagram</a></li>
+    </ul>
+
+    <hr>
 
     <?php readfile("html/main-menu.html");?>
 
     <div class="twitter-embed">
-        <a class="twitter-timeline" data-theme="light" href="https://twitter.com/BlueArrowRacing?ref_src=twsrc%5Etfw">Tweets by BlueArrowRacing</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+        <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/BlueArrowRacing?ref_src=twsrc%5Etfw">Tweets by BlueArrowRacing</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
+</body>    
 </html>
