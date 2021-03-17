@@ -30,12 +30,31 @@ hr {
     border-bottom: none;
 }
 
+.small-padding-top {
+    padding-top: 2vh;
+}
+
+.medium-padding-top {
+    padding-top: 4vh;
+}
+
+.big-padding-top {
+    padding-top: 6vh;
+}
+
 .small-text {
     font-size: 0.8em;
 }
 
 .small-icon {
     height: 1em;
+    width: auto;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
+
+.medium-icon {
+    height: 2.5em;
     width: auto;
     margin-left: 0.3em;
     margin-right: 0.3em;
@@ -129,6 +148,30 @@ img.center {
     position: fixed;
     top: 2vh;
     right: 2vh;
+    width: min-content;
+    height: min-content;
+}
+
+.menu-text {
+    display: block;
+    visibility: visible;
+}
+
+.menu-icon {
+    display: none;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 900px) {
+    .menu-icon {
+        display: block;
+        visibility: visible;
+    }
+    
+    .menu-text {
+        display: none;
+        visibility: hidden;
+    }
 }
 
 button:hover {
@@ -138,6 +181,30 @@ button:hover {
 /* END Main Menu */
 
 /* BEGIN index.php */
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials > * {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+@media screen and (max-width: 900px) {
+    .socials {
+        display: block;
+        width: min-content;
+    }
+
+    .socials-entry {
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 .welcome-banner {
     margin-top: 0;

@@ -56,17 +56,15 @@
         </div>
     </div>
 
-    <hr>
-
-    <p class="small-text center">Schauen Sie sich gerne etwas auf unserer Website um, bei Fragen stehen wir Ihnen gerne zur Verfügung.<br> Kontaktieren Sie uns über das Kontaktformular auf unser "Über uns" Seite. </p>
+    <p class="small-text center medium-padding-top">Schauen Sie sich gerne etwas auf unserer Website um, bei Fragen stehen wir Ihnen gerne zur Verfügung.<br> Kontaktieren Sie uns über das Kontaktformular auf unser "Über uns" Seite. </p>
 
     <hr>
 
-    <ul class="small-text center no-dots">
-        <li><a href="https://twitter.com/BlueArrowRacing" target="_blank"><img src="/img/logos/twitter_icon_filled.png" class="small-icon">Twitter</a></li>
-        <li><a href="https://www.youtube.com/channel/UCo2Jd5hqyqVfyZ5II1XK9jg" target="_blank"><img src="/img/logos/youtube_icon_filled.png" class="small-icon">Youtube</a></li>
-        <li><a href="https://www.instagram.com/p/CLkEfNHB6Nn" target="_blank"><img src="/img/logos/instagram_icon_filled.png" class="small-icon">Instagram</a></li>
-    </ul>
+    <div class="small-text center socials">
+        <div class="socials-entry"><a href="https://twitter.com/BlueArrowRacing" target="_blank"><img src="/img/logos/twitter_icon_filled.png" class="small-icon">Twitter</a></div>
+        <div class="socials-entry"><a href="https://www.youtube.com/channel/UCo2Jd5hqyqVfyZ5II1XK9jg" target="_blank"><img src="/img/logos/youtube_icon_filled.png" class="small-icon">YouTube</a></div>
+        <div class="socials-entry"><a href="https://www.instagram.com/p/CLkEfNHB6Nn" target="_blank"><img src="/img/logos/instagram_icon_filled.png" class="small-icon">Instagram</a></div>
+    </div>
 
     <hr>
 
