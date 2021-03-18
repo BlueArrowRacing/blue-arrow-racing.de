@@ -52,5 +52,34 @@
     <h1 class="center">Artikel</h1>
     <h2 class="center">Work in progress...</h2>
 
+    <div class="articles">
+    
+    <?php 
+    
+    $article_files = glob("articles/*.md");
+
+    foreach($article_files as $article_file) {
+        $article_title = "TODO: Titel";
+        $article_related_files = glob(explode(".", $article_file, 2)[0] . ".*");
+
+        foreach ($article_related_files as $related_file) {
+            if( strpos($related_file, ".png") !== false || strpos($related_file, ".jpg") !== false) { // !== false ist nötig, da auch 0 als false evaluiert würde
+                $article_image_file = $related_file;
+            }
+        }
+
+        echo "<div class=\"article-entry\"><a href=\"" . $article_file . "\">";
+
+        if(isset($article_image_file)) {
+            echo "<img class=\"article-image\" src=\"" . $article_image_file . "\">";
+            unset($article_image_file);
+        }
+
+        echo $article_title . "</a></div><br>";
+    }
+
+    ?>
+    </div>
+
     <?php readfile("html/main-menu.html");?>
 </html>
