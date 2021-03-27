@@ -226,6 +226,10 @@ button:hover {
     margin-right: 10vw;
 }
 
+.welcome-banner-content > h1 {
+    text-transform: uppercase;
+}
+
 /* END index.php */
 
 /* BEGIN Artikel */

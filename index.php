@@ -51,7 +51,7 @@
 <body>
     <div class="welcome-banner">
         <div class="welcome-banner-content">
-            <h1 class="center">WILLKOMMEN BEI BLUE ARROW RACING!</h1>
+            <h1 class="center">Willkommen bei Blue Arrow Racing!</h1>
             <h2 class="center">Das Formel 1 in der Schule Team vom Ökumenischen Gymnasium zu Bremen</h2>
         </div>
     </div>
