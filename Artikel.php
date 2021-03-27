@@ -56,11 +56,16 @@
     
     <?php 
     
-    $article_files = glob("articles/*.md");
+    $article_files = glob("articles/*.html");
 
     foreach($article_files as $article_file) {
-        $article_title = "TODO: Titel";
-        $article_related_files = glob(explode(".", $article_file, 2)[0] . ".*");
+        $article_prefix = explode(".", $article_file, 2)[0];
+        
+        $article_title = $article_prefix;
+        $article_title = str_replace("_", " ", $article_title);
+        $article_title = str_replace("articles/", "", $article_title);
+
+        $article_related_files = glob($article_prefix . ".*");
 
         foreach ($article_related_files as $related_file) {
             if( strpos($related_file, ".png") !== false || strpos($related_file, ".jpg") !== false) { // !== false ist nötig, da auch 0 als false evaluiert würde
@@ -68,14 +73,14 @@
             }
         }
 
-        echo "<div class=\"article-entry\"><a href=\"" . $article_file . "\">";
+        echo "<div class=\"article-entry\"><a href=\"/" . $article_file . "\">";
 
         if(isset($article_image_file)) {
-            echo "<img class=\"article-image\" src=\"" . $article_image_file . "\">";
+            echo "<img class=\"article-image\" src=\"/" . $article_image_file . "\">";
             unset($article_image_file);
         }
 
-        echo $article_title . "</a></div><br>";
+        echo "<div class=\"article-title\">" . $article_title . "</div></a></div><hr>";
     }
 
     ?>
