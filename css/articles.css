@@ -1,0 +1,122 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.8em;
+    color: #17242eFF;
+    background-color: transparent;
+    letter-spacing: 0.03em;
+    padding: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+} 
+
+h1 {
+    text-decoration: 3px underline;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+hr {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+hr.dashed {
+    border-top: 2px dashed #bbb;
+    border-bottom: none;
+}
+
+.small-padding-top {
+    padding-top: 2vh;
+}
+
+.medium-padding-top {
+    padding-top: 4vh;
+}
+
+.big-padding-top {
+    padding-top: 6vh;
+}
+
+.small-icon {
+    height: 1em;
+    width: auto;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
+
+.medium-icon {
+    height: 2.5em;
+    width: auto;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-self: center;
+}
+
+img {
+    width: 70%;
+    height: auto;
+    margin-top: .5em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+img.small {
+    width: 40%;
+    height: auto;
+}
+
+img.medium {
+    width: 60%;
+    height: auto;
+}
+
+img.big {
+    width: 80%;
+    height: auto;
+}
+
+img.full {
+    width: 100%;
+    height: auto;
+}
+
+blockquote {
+    padding-left: 1em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    border-left: 5px solid #999;
+}
+
+blockquote > p {
+    color: #666;
+    margin: 0;
+}
+
+blockquote > footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    color: #666;
+}
+
+blockquote > footer::before {
+    content: " — ";
+}

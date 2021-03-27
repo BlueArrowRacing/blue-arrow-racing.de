@@ -80,7 +80,7 @@
             unset($article_image_file);
         }
 
-        echo "<div class=\"article-title\">" . $article_title . "</div></a></div><hr>";
+        echo "<div class=\"article-title\">" . $article_title . "</div></a></div><hr class='dashed'>";
     }
 
     ?>

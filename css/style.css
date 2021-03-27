@@ -16,17 +16,15 @@ a {
     text-decoration: none;
 }
 
-p {
-    padding-left: 10vw;
-    padding-right: 10vw;
-}
-
 hr {
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 4vh;
     margin-bottom: 4vh;
-    border-top: 2px dashed lightgray;
+}
+
+hr.dashed {
+    border-top: 2px dashed #bbb;
     border-bottom: none;
 }
 
@@ -58,10 +56,6 @@ hr {
     width: auto;
     margin-left: 0.3em;
     margin-right: 0.3em;
-}
-
-ul.no-dots {
-    list-style-type: none;
 }
 
 .center {
@@ -258,7 +252,7 @@ button:hover {
 
 .article-image:hover {
     filter: saturate(0.7) brightness(1.3);
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 /* END Artikel */

@@ -58,7 +58,7 @@
 
     <p class="small-text center medium-padding-top">Schauen Sie sich gerne etwas auf unserer Website um, bei Fragen stehen wir Ihnen gerne zur Verfügung.<br> Kontaktieren Sie uns über das Kontaktformular auf unser "Über uns" Seite. </p>
 
-    <hr>
+    <hr class="dashed">
 
     <div class="small-text center socials">
         <div class="socials-entry"><a href="https://twitter.com/BlueArrowRacing" target="_blank"><img src="/img/logos/twitter_icon_filled.png" class="small-icon">Twitter</a></div>
@@ -66,7 +66,7 @@
         <div class="socials-entry"><a href="https://www.instagram.com/p/CLkEfNHB6Nn" target="_blank"><img src="/img/logos/instagram_icon_filled.png" class="small-icon">Instagram</a></div>
     </div>
 
-    <hr>
+    <hr class="dashed">
 
     <?php readfile("html/main-menu.html");?>
 
