@@ -35,6 +35,7 @@ function includeYT() {
     id = elmnt.getAttribute("include-youtube");
     if(id) {
       elmnt.classList.add("yt-embed")
+      elmnt.removeAttribute("include-youtube");
       elmnt.innerHTML = '<iframe class="ytplayer" type="text/html" src="https://www.youtube.com/embed/'+id+'" frameborder="0"></iframe>'
     }
   }
