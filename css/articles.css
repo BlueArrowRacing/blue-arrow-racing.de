@@ -10,6 +10,11 @@ body {
     margin-right: 20%;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 900px) {
     body {
         margin-left: 5%;
