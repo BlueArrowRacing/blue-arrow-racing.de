@@ -28,6 +28,18 @@ function includeHTML() {
   }
 }
 
-console.log("including HTML...")
+function includeYT() {
+  z = document.getElementsByTagName("*")
+  for(i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    id = elmnt.getAttribute("include-youtube");
+    if(id) {
+      elmnt.classList.add("yt-embed")
+      elmnt.innerHTML = '<iframe class="ytplayer" type="text/html" src="https://www.youtube.com/embed/'+id+'" frameborder="0"></iframe>'
+    }
+  }
+}
+
 includeHTML();
-console.log("included HTML")
+
+includeYT();
