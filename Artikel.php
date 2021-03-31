@@ -50,7 +50,9 @@
 </head>
 <body>
     <h1 class="center">Artikel</h1>
-    <h2 class="center">Work in progress...</h2>
+    <p class="center">Hier berichten wir über Neuigkeiten und Ereignisse rund um unser Team.</p>
+
+    <hr class="dashed">
 
     <div class="articles">
     
