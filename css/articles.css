@@ -31,14 +31,30 @@ a {
         margin-left: 5%;
         margin-right: 5%;
     }
-} 
+}
 
 h1 {
+    font-size: 2.1em;
+    font-weight: bold;
     text-decoration: 3px underline;
 }
 
 h2 {
-    text-decoration: underline;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: 2px underline;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h4 {
+    font-size: 1.2em;
+    font-weight: normal;
+    text-decoration: none;
 }
 
 hr {
@@ -136,3 +152,4 @@ blockquote > footer {
 blockquote > footer::before {
     content: " — ";
 }
+
