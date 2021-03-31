@@ -16,6 +16,38 @@ a {
     text-decoration: none;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 2.1em;
+    font-weight: bold;
+}
+
+h1.underline {
+    text-decoration: 3px underline;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h2.underline {
+    text-decoration: 2px underline;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
 hr {
     margin-left: 20%;
     margin-right: 20%;
