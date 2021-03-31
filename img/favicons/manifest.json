@@ -1,9 +1,9 @@
 {
  "name": "Blue Arrow Racing",
- "start_url": "https://bluearrowracing.github.io/",
+ "start_url": "https://blue-arrow-racing.de/",
  "background_color": "#e8f0f5FF",
  "display": "standalone",
- "scope": "https://bluearrowracing.github.io/",
+ "scope": "https://blue-arrow-racing.de/",
  "theme_color": "#e8f0f5FF",
 
  "icons": [
