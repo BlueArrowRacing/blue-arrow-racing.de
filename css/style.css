@@ -11,14 +11,18 @@ body {
     margin: 0;
 }
 
-p {
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
 a {
     color: inherit;
     text-decoration: none;
+}
+
+a.email {
+    color: inherit;
+    text-decoration: underline;
+}
+
+a.email:hover {
+    filter: brightness(1.);
 }
 
 .underline {
@@ -54,8 +58,8 @@ h4 {
 }
 
 hr {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-top: 4vh;
     margin-bottom: 4vh;
 }
@@ -177,8 +181,8 @@ noscript {
 
 .articles {
     margin-top: 10vh;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
     width: auto;
 }
 
@@ -202,16 +206,93 @@ noscript {
 
 /* END Artikel */
 
+/* BEGIN Über uns */
+
+/* begin desktop */
+
+@media screen and (min-width: 1200px) {
+
+    .general-container {
+        margin-left: 15%;
+        margin-right: 15%;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5%
+    }
+
+    .about-us-container {
+        padding-left: 15%;
+        padding-right: 15%;
+        
+        display: grid;
+        row-gap: 20vh;
+    }
+
+    .member {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 10fr;
+
+        column-gap: 5%;
+    }
+
+    .member-name {
+        padding: 0;
+        margin: 0;
+    }
+
+    .member-desc {
+        height: 100%
+    }
+
+    .member-img {
+        height: auto;
+        width: 100%;
+        grid-area: 1 / 2 / 3 / 3;
+    }
+
+}
+
+/* end desktop */
+
+/* begin mobile */
+
+@media screen and (max-width: 1200px) {
+
+    .general-container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .about-us-container {
+        margin-left: 5%;
+        margin-right: 5%;
+        display: grid;
+        row-gap: 5vh;
+    }
+
+    .member-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* end mobile */
+
+/* END Über uns */
+
 /* BEGIN Twitter */
 
 .twitter-embed {
     margin-top: 10vh;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
     width: auto;
 }
 
 @media screen and (max-width: 900px) {
+
     .twitter-embed {
         margin-left: 0;
         margin-right: 0;
