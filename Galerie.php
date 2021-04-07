@@ -52,5 +52,8 @@
     <h1 class="center">Galerie</h1>
     <h2 class="center">Work in progress...</h2>
 
+    <div class="wordmark-include" include-html="/html/wordmark.html"></div>
+
     <?php readfile("html/main-menu.html");?>
+    <script src="/js/include.js"></script>
 </html>
