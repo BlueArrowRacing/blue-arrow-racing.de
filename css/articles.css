@@ -131,6 +131,13 @@ img.full {
     height: auto;
 }
 
+.wordmark {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
 blockquote {
     padding-left: 1em;
     padding-top: 0.2em;

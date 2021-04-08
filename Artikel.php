@@ -59,31 +59,58 @@
         
         <?php 
         
-        $article_files = glob("articles/*.html");
+        function endsWith($string, $endString) {
+            $len = strlen($endString);
+            if ($len == 0) {
+                return true;
+            }
+            return (substr($string, -$len) === $endString);
+        }
 
-        foreach($article_files as $article_file) {
-            $article_prefix = explode(".", $article_file, 2)[0];
-            
-            $article_title = $article_prefix;
-            $article_title = str_replace("_", " ", $article_title);
-            $article_title = str_replace("articles/", "", $article_title);
+        $article_dirs = glob("articles/*/");
 
-            $article_related_files = glob($article_prefix . ".*");
+        foreach($article_dirs as $article_dir) {
 
-            foreach ($article_related_files as $related_file) {
-                if( strpos($related_file, ".png") !== false || strpos($related_file, ".jpg") !== false) { // !== false ist nötig, da auch 0 als false evaluiert würde
-                    $article_image_file = $related_file;
+            $article_related_files = glob($article_dir . "*");
+
+            foreach($article_related_files as $article_related_file) {
+
+                if(endsWith($article_related_file, "article.json")) {
+
+                    $article_data_file = $article_related_file;
+                    continue;
                 }
             }
 
-            echo "<div class=\"article-entry\"><a class=\"no-hover-colorfx\" href=\"/" . $article_file . "\">";
-
-            if(isset($article_image_file)) {
-                echo "<img class=\"article-image\" src=\"/" . $article_image_file . "\">";
-                unset($article_image_file);
+            if(isset($article_data_file)) {
+                $article_data_string = file_get_contents($article_data_file);
+                $article_data = json_decode($article_data_string);
             }
 
-            echo "<div class=\"article-title\">" . $article_title . "</div></a></div><hr class='dashed'>";
+            if(isset($article_data)) {
+                echo "<a class=\"no-hover-colorfx\" href=\"". $article_dir ."article.html\"><div class=\"article-entry\">";
+
+                if(isset($article_data->image)) {
+                    echo "<img class=\"article-image\" src=\"" . $article_data->image . "\">";
+                }
+                
+                if(isset($article_data->title)) {
+                    echo "<h3 class=\"article-title\">" . $article_data->title . "</h3>";
+                }
+
+                if(isset($article_data->author)) {
+                    echo "<div class=\"article-author\">" . $article_data->author . "</div>";
+                }
+
+                if(isset($article_data->date)) {
+                    echo "<div class=\"article-date\">" . $article_data->date . "</div>";
+                }
+
+                echo "</div></a>";
+                echo "<hr class=\"dashed\">";
+            }
+
+            unset($article_data);
         }
 
         ?>
