@@ -49,44 +49,46 @@
 
 </head>
 <body>
-    <h1 class="center big-padding-top">Artikel</h1>
-    <p class="center">Hier berichten wir über Neuigkeiten und Ereignisse rund um unser Team.</p>
+    <div class="sidepadding">
+        <h1 class="center big-padding-top">Artikel</h1>
+        <p class="center">Hier berichten wir über Neuigkeiten und Ereignisse rund um unser Team.</p>
 
-    <hr class="dashed">
+        <hr class="dashed">
 
-    <div class="articles">
-    
-    <?php 
-    
-    $article_files = glob("articles/*.html");
-
-    foreach($article_files as $article_file) {
-        $article_prefix = explode(".", $article_file, 2)[0];
+        <div class="articles">
         
-        $article_title = $article_prefix;
-        $article_title = str_replace("_", " ", $article_title);
-        $article_title = str_replace("articles/", "", $article_title);
+        <?php 
+        
+        $article_files = glob("articles/*.html");
 
-        $article_related_files = glob($article_prefix . ".*");
+        foreach($article_files as $article_file) {
+            $article_prefix = explode(".", $article_file, 2)[0];
+            
+            $article_title = $article_prefix;
+            $article_title = str_replace("_", " ", $article_title);
+            $article_title = str_replace("articles/", "", $article_title);
 
-        foreach ($article_related_files as $related_file) {
-            if( strpos($related_file, ".png") !== false || strpos($related_file, ".jpg") !== false) { // !== false ist nötig, da auch 0 als false evaluiert würde
-                $article_image_file = $related_file;
+            $article_related_files = glob($article_prefix . ".*");
+
+            foreach ($article_related_files as $related_file) {
+                if( strpos($related_file, ".png") !== false || strpos($related_file, ".jpg") !== false) { // !== false ist nötig, da auch 0 als false evaluiert würde
+                    $article_image_file = $related_file;
+                }
             }
+
+            echo "<div class=\"article-entry\"><a class=\"no-hover-colorfx\" href=\"/" . $article_file . "\">";
+
+            if(isset($article_image_file)) {
+                echo "<img class=\"article-image\" src=\"/" . $article_image_file . "\">";
+                unset($article_image_file);
+            }
+
+            echo "<div class=\"article-title\">" . $article_title . "</div></a></div><hr class='dashed'>";
         }
 
-        echo "<div class=\"article-entry\"><a class=\"no-hover-colorfx\" href=\"/" . $article_file . "\">";
-
-        if(isset($article_image_file)) {
-            echo "<img class=\"article-image\" src=\"/" . $article_image_file . "\">";
-            unset($article_image_file);
-        }
-
-        echo "<div class=\"article-title\">" . $article_title . "</div></a></div><hr class='dashed'>";
-    }
-
-    ?>
-    
+        ?>
+        
+        </div>
     </div>
 
     <div class="wordmark-include" include-html="/html/wordmark.html"></div>

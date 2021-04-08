@@ -49,8 +49,12 @@
 
 </head>
 <body>
-    <h1 class="center big-padding-top">Galerie</h1>
-    <h2 class="center">Work in progress...</h2>
+    <div class="sidepadding">
+        <h1 class="center big-padding-top">Galerie</h1>
+        <h2 class="center">Work in progress...</h2>
+    
+        <!--TODO: Content here-->
+    </div>
 
     <div class="wordmark-include" include-html="/html/wordmark.html"></div>
 
