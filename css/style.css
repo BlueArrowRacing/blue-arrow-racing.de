@@ -92,15 +92,15 @@ hr.dashed {
 }
 
 .medium-padding-top {
-    padding-top: 4vh;
+    padding-top: 5vh;
 }
 
 .big-padding-top {
-    padding-top: 6vh;
+    padding-top: 10vh;
 }
 
 .huge-padding-top {
-    padding-top: 12vh;
+    padding-top: 25vh;
 }
 
 .small-text {
@@ -217,7 +217,12 @@ img.center {
     .general-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 5%
+        column-gap: 5%;
+        row-gap: 5vh;
+    }
+
+    .general-container > * {
+        width: 100%;
     }
 
     .about-us-container {
