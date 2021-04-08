@@ -13,20 +13,25 @@ body {
 
 a {
     color: inherit;
+    transition: color 0.2s;
+    transition-timing-function: ease-in-out;
     text-decoration: none;
 }
 
-a.email {
-    color: inherit;
-    text-decoration: underline;
+a:hover {
+    color: #777;
 }
 
-a.email:hover {
-    filter: brightness(1.);
+a.no-hover-colorfx:hover {
+    color: inherit;
 }
 
 .underline {
     text-decoration: underline;
+}
+
+.no-decoration {
+    text-decoration: none;
 }
 
 h1 {
@@ -81,7 +86,7 @@ hr.dashed {
     padding-top: 6vh;
 }
 
-.small-text {
+p.small {
     font-size: 0.8em;
 }
 

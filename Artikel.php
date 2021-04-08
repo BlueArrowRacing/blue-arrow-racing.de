@@ -75,7 +75,7 @@
             }
         }
 
-        echo "<div class=\"article-entry\"><a href=\"/" . $article_file . "\">";
+        echo "<div class=\"article-entry\"><a class=\"nohover\" href=\"/" . $article_file . "\">";
 
         if(isset($article_image_file)) {
             echo "<img class=\"article-image\" src=\"/" . $article_image_file . "\">";
