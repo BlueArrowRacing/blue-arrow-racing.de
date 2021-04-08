@@ -2,4 +2,19 @@
     position: absolute;
     top: 5vh;
     left: 5vh;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+@media screen and (min-width: 900px) {
+    .wordmark {
+        opacity: 1;
+        visibility: visible;        
+    }
+} 
+
+@media screen and (max-width: 900px) {
+    .wordmark {
+        visibility: hidden;
+        opacity: 0;
+    }
 }

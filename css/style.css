@@ -286,4 +286,10 @@ img.center {
     margin-right: auto;
 }
 
+@media screen and (max-width: 900px) {
+    .twitter-embed {
+        width: 100%;
+    }
+}
+
 /* END Twitter */
