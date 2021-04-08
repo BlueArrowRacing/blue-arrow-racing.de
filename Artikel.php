@@ -67,7 +67,7 @@
             return (substr($string, -$len) === $endString);
         }
 
-        $article_dirs = glob("articles/*/");
+        $article_dirs = array_reverse(glob("articles/*/"));
 
         foreach($article_dirs as $article_dir) {
 
