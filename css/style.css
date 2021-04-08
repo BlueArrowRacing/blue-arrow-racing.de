@@ -86,6 +86,10 @@ hr.dashed {
     padding-top: 6vh;
 }
 
+.huge-padding-top {
+    padding-top: 12vh;
+}
+
 p.small {
     font-size: 0.8em;
 }
@@ -218,8 +222,8 @@ noscript {
 @media screen and (min-width: 1200px) {
 
     .general-container {
-        margin-left: 15%;
-        margin-right: 15%;
+        padding-left: 15%;
+        padding-right: 15%;
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
