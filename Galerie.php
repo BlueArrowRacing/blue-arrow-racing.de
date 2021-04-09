@@ -50,7 +50,7 @@
 </head>
 <body>
     <div class="sidepadding">
-        <h1 class="center big-padding-top">Galerie</h1>
+        <h1 class="center big-margin-top">Galerie</h1>
         <h2 class="center">Work in progress...</h2>
     
         <!--TODO: Content here-->

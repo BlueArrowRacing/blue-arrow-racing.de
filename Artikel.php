@@ -50,7 +50,7 @@
 </head>
 <body>
     <div class="sidepadding">
-        <h1 class="center big-padding-top">Artikel</h1>
+        <h1 class="center big-margin-top">Artikel</h1>
         <p class="center">Hier berichten wir über Neuigkeiten und Ereignisse rund um unser Team.</p>
 
         <hr class="dashed">

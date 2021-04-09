@@ -47,10 +47,14 @@
     <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <!--SendInBlue Style-->
+    <link rel="stylesheet" href="/css/sendinblue.css">
+    <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+
 </head>
 <body>    
     <div class="sidepadding">
-        <h1 class="center big-padding-top">Über uns & Kontakt</h1>
+        <h1 class="center big-margin-top">Über uns & Kontakt</h1>
 
         <div class="general-container">
             <div class="general-element">
@@ -64,7 +68,7 @@
             </div>
         </div>
 
-        <div class="about-us-container big-padding-top">
+        <div class="about-us-container big-margin-top">
             <div class="member">
                 <h2 class="member-name">Jasper Eggert</h2>
                 <p class="member-desc">Ich bin zuständig für das gesamte Management des Teams. Dazu zählt natürlich auch, mal manche Teammitglieder zu ermahnen, damit etwas rechtzeitig fertig wird. Im Allgemeinen versuche ich aber, ein gutes Klima im Team zu bewahren und mich an den Teammanagern in der "großen" Formel 1 zu orientieren. Erreichbar bin ich unter der folgenden Email Adresse: <a class="email underline" href="mailto:jasper@blue-arrow-racing.de">jasper@blue-arrow-racing.de</a></p>
@@ -98,9 +102,31 @@
         </div>
     </div>
 
+    <hr class="dashed big-margin-top">
+
+    <div class="sendinblue-include" include-html="/html/sendinblue.html"></div>
+
     <div class="wordmark-include" include-html="/html/wordmark.html"></div>
-    <div include-html="/html/main-menu.html"></div>
+    <div class="main-menu-include" include-html="/html/main-menu.html"></div>    
 
     <script src="/js/include.js"></script>
     <script src="/js/main-menu.js"></script>
+
+    <!-- START SendInBlue-->
+    <script>
+        window.REQUIRED_CODE_ERROR_MESSAGE = 'Wählen Sie bitte einen Ländervorwahl aus.';
+        window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfen Sie das Feldformat und versuchen Sie es erneut.";
+        window.REQUIRED_ERROR_MESSAGE = "Dieses Feld darf nicht leer sein. ";
+        window.GENERIC_INVALID_MESSAGE = "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfen Sie das Feldformat und versuchen Sie es erneut.";
+
+        window.translation = {
+            common: {
+                selectedList: '{quantity} Liste ausgewählt',
+                selectedLists: '{quantity} Listen ausgewählt'
+            }
+        };
+        var AUTOHIDE = Boolean(1);
+    </script>
+    <script src="https://sibforms.com/forms/end-form/build/main.js"></script>
+    <!-- End Sendinblue-->
 </html>

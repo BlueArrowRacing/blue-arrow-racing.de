@@ -87,20 +87,20 @@ hr.dashed {
     }
 }
 
-.small-padding-top {
-    padding-top: 2vh;
+.small-margin-top {
+    margin-top: 2vh;
 }
 
-.medium-padding-top {
-    padding-top: 5vh;
+.medium-margin-top {
+    margin-top: 5vh;
 }
 
-.big-padding-top {
-    padding-top: 10vh;
+.big-margin-top {
+    margin-top: 10vh;
 }
 
-.huge-padding-top {
-    padding-top: 25vh;
+.huge-margin-top {
+    margin-top: 25vh;
 }
 
 .small-text {
@@ -192,6 +192,8 @@ img.center {
 
 .articles {
     margin-top: 10vh;
+    margin-left: 10%;
+    margin-right: 10%;
     width: auto;
 }
 
