@@ -5,9 +5,22 @@ body {
     color: #17242eFF;
     background-color: transparent;
     letter-spacing: 0.03em;
-    padding: 0;
-    margin-left: 20%;
-    margin-right: 20%;
+
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+.instagram-media {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .yt-embed {
@@ -24,13 +37,6 @@ body {
 a {
     color: inherit;
     text-decoration: none;
-}
-
-@media screen and (max-width: 900px) {
-    body {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
 }
 
 h1 {
