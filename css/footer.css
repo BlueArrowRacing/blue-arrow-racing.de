@@ -2,12 +2,7 @@
     display: grid;
     font-size: small;
     text-align: center;
-    line-height: 0.8em;
-}
-
-.footer-column {
-    display: grid;
-    grid-template-columns: auto;
+    line-height: 1.6em;
 }
 
 .footer-column > * > a {
