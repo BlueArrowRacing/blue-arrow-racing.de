@@ -236,9 +236,8 @@ img.full {
 /* BEGIN Artikel */
 
 .articles {
-    margin-top: 10vh;
     width: auto;
-    transition: padding 0.5s;
+    transition: margin 0.5s;
 }
 
 @media screen and (min-width: 900px) {

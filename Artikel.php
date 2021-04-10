@@ -53,12 +53,11 @@
         <h1 class="center big-margin-top">Artikel</h1>
         <p class="center">Hier berichten wir über Neuigkeiten und Ereignisse rund um unser Team.</p>
 
-        <hr class="dashed">
+        <hr class="dashed medium-margin">
 
         <div class="articles">
         
         <?php 
-        
         function endsWith($string, $endString) {
             $len = strlen($endString);
             if ($len == 0) {
