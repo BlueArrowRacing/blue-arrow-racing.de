@@ -51,9 +51,10 @@
 <body>
     <div class="sidepadding">
         <h1 class="center big-margin-top">Galerie</h1>
-        <h2 class="center">Work in progress...</h2>
-    
-        <!--TODO: Content here-->
+        <p class="center">Verschiedenste Fotos von uns und unseren Aktivitäten</p>
+        <hr class="dashed">
+        <embed src="https://www.pexels.com/@blue-arrow-racing-2681142" style="width:100%; height: 300vh;">
+        <hr class="dashed">
     </div>
 
     <div class="footer-include" include-html="/html/footer.html"></div>
