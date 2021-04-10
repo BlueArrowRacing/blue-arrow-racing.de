@@ -74,6 +74,26 @@ hr.dashed {
     border-bottom: none;
 }
 
+hr.small-margin {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+hr.medium-margin {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+hr.big-margin {
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+}
+
+hr.huge-margin {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+
 .sidepadding {
     padding-left: 15%;
     padding-right: 15%;
@@ -129,6 +149,30 @@ hr.dashed {
 }
 
 img.center {
+    display: block;
+}
+
+img.small {
+    width: 40%;
+    height: auto;
+    display: block;
+}
+
+img.medium {
+    width: 60%;
+    height: auto;
+    display: block;
+}
+
+img.big {
+    width: 80%;
+    height: auto;
+    display: block;
+}
+
+img.full {
+    width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -335,3 +379,18 @@ img.center {
 }
 
 /* END Twitter */
+
+/* BEGIN YouTube */
+
+.yt-embed {
+    margin-top: 2vh;
+    width: 100%;
+    height: 70vh;
+}
+
+.ytplayer {
+    width: 100%;
+    height: 100%;
+}
+
+/* END YouTube */
