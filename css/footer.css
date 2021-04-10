@@ -1,0 +1,39 @@
+.footer {
+    display: grid;
+    font-size: small;
+    text-align: center;
+    line-height: 0.8em;
+}
+
+.footer-column {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.footer-column > * > a {
+    color: #888;
+}
+
+/* BEGIN DESKTOP */
+
+@media screen and (min-width: 900px) {
+    .footer {
+        margin-left: 15%;
+        margin-right: 15%;
+        
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* END DESKTOP */
+
+/* BEGIN MOBILE */
+
+@media screen and (max-width: 900px) {
+    .footer {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+/* END MOBILE */
