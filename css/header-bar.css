@@ -69,7 +69,7 @@
 .main-menu-close-btn {
     width: 100%;
     background-color: transparent;
-    border-color: transparent;
+    border: none;
     color: #fff;
     font-size: 1.3em;
     margin-left: auto;
@@ -82,7 +82,7 @@
 
 .main-menu-open-btn {
     background-color: transparent;
-    border-color: transparent;
+    border: none;
 
     position: absolute;
     left: 0;
