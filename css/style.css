@@ -6,23 +6,19 @@ body {
     line-height: 1.8em;
     color: #17242eFF;
     letter-spacing: 0.03em;
-    padding: 0;
     margin: 0;
+    padding-top: 5vh;
 }
 
 a {
     color: inherit;
-    transition: color 0.2s;
-    transition-timing-function: ease-in-out;
+    transition: color 0.4s text-shadow 0.4s;
+    transition-timing-function: ease;
     text-decoration: none;
 }
 
 a:hover {
-    color: #17242e;
-}
-
-a.bright:hover {
-    color: #e8f0f5;
+    text-shadow: 1px 1px 1px #17242e90;
 }
 
 a.no-hover-colorfx:hover {
