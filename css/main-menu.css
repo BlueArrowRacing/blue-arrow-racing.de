@@ -74,6 +74,8 @@
 }
 
 .main-menu-button-icon {
+    margin: 0;
+    padding: 0;
     width: 4vh;
     height: 4vh;
 }

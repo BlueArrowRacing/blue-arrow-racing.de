@@ -105,8 +105,14 @@ hr.dashed {
     transition: padding 0.5s;
 }
 
+.sidepadding-15 {
+    padding-left: 15%;
+    padding-right: 15%;
+    transition: padding 0.5s;
+}
+
 @media screen and (max-width: 900px) {
-    .sidepadding {
+    .sidepadding, .sidepadding-15 {
         padding-left: 5%;
         padding-right: 5%;
     }
