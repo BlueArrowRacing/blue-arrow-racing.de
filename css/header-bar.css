@@ -70,6 +70,7 @@
     width: 100%;
     background-color: transparent;
     border: none;
+    outline: none;
     color: #fff;
     font-size: 1.3em;
     margin-left: auto;
@@ -83,6 +84,7 @@
 .main-menu-open-btn {
     background-color: transparent;
     border: none;
+    outline: none;
 
     position: absolute;
     left: 0;
