@@ -118,8 +118,9 @@
     </div>
 
     <div class="footer-include" include-html="/html/footer.html"></div>
-    <div class="wordmark-include" include-html="/html/wordmark.html"></div>
-    <?php readfile("html/main-menu.html");?>
+    <div class="header-bar-include" include-html="/html/header-bar.html"></div>
     
     <script src="/js/include.js"></script>
+    <script src="/js/main-menu.js"></script>
+</body>
 </html>
