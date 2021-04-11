@@ -1,4 +1,5 @@
 .footer {
+    background-color: #e8f0f5;
     display: grid;
     font-size: small;
     text-align: center;
@@ -6,15 +7,15 @@
 }
 
 .footer-column > * > a {
-    color: #888;
+    color: #999;
 }
 
 /* BEGIN DESKTOP */
 
 @media screen and (min-width: 900px) {
     .footer {
-        margin-left: 15%;
-        margin-right: 15%;
+        padding-left: 15%;
+        padding-right: 15%;
         
         grid-template-columns: repeat(3, 1fr);
     }
@@ -26,8 +27,8 @@
 
 @media screen and (max-width: 900px) {
     .footer {
-        margin-left: 5%;
-        margin-right: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 

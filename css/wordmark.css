@@ -1,9 +1,12 @@
 .wordmark {
     position: absolute;
-    top: 5vh;
-    left: 5vh;
+    top: 4vh;
+    left: 4vh;
+    width: auto;
+    height: 8vh;
 }
 
+/*
 @media screen and (min-width: 900px) {
     .wordmark {
         visibility: visible;
@@ -16,4 +19,4 @@
         visibility: hidden;
         opacity: 0;
     }
-}
+} */

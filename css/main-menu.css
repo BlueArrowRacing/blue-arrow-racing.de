@@ -1,5 +1,5 @@
 #main-menu {
-    background-color: #16395ff0;
+    background-color: #1c6abd;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
@@ -33,16 +33,11 @@
     text-align: center;
 }
 
-.main-menu-icon {
-    height: 2.5em;
-    width: auto;
-}
-
-.main-menu-title {
-    color: #fff;
+.main-menu-wordmark {
+    display: block;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
-    text-decoration: none;
 }
 
 .main-menu-entry {
@@ -94,8 +89,8 @@
     }
 }
 
-button:hover {
-    color: #777;
+.main-menu-close-btn:hover {
+    color: #e8f0f5;
 }
 
 .menu-icon:hover {
