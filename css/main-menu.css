@@ -70,10 +70,10 @@
 
     position: fixed;
     top: 3vh;
-    right: 3vh;
+    left: 3vh;
 }
 
 .main-menu-button-icon {
-    width: 6vh;
-    height: 6vh;
+    width: 4vh;
+    height: 4vh;
 }
