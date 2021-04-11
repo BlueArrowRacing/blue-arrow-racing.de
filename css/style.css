@@ -99,26 +99,6 @@ hr.dashed {
     border-bottom: none;
 }
 
-hr.small-margin {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-}
-
-hr.medium-margin {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-}
-
-hr.big-margin {
-    margin-top: 15vh;
-    margin-bottom: 15vh;
-}
-
-hr.huge-margin {
-    margin-top: 20vh;
-    margin-bottom: 20vh;
-}
-
 .sidepadding {
     padding-left: 20%;
     padding-right: 20%;
@@ -133,23 +113,43 @@ hr.huge-margin {
 }
 
 .small-margin-top {
-    margin-top: 2vh;
-}
-
-.medium-margin-top {
     margin-top: 5vh;
 }
 
-.big-margin-top {
+.medium-margin-top {
     margin-top: 10vh;
 }
 
-.huge-margin-top {
-    margin-top: 25vh;
+.big-margin-top {
+    margin-top: 15vh;
 }
 
-.small-text {
-    font-size: 0.8em;
+.huge-margin-top {
+    margin-top: 20vh;
+}
+
+.small-margin {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.medium-margin {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.big-margin {
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+}
+
+.huge-margin {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+
+.smaller-text {
+    font-size: smaller;
 }
 
 .small-icon {

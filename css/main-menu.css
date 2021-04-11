@@ -35,7 +35,8 @@
 
 .main-menu-wordmark {
     display: block;
-    width: 50%;
+    width: auto;
+    height: 7em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -56,43 +57,23 @@
     margin-right: auto;
 }
 
-.main-menu-open-btn {
-    background-color: transparent;
-    border-color: transparent;
-    font-size: 0.9em;
-    position: fixed;
-    top: 2vh;
-    right: 2vh;
-    width: min-content;
-    height: min-content;
-}
-
-.menu-text {
-    display: block;
-    visibility: visible;
-}
-
-.menu-icon {
-    display: none;
-    visibility: hidden;
-}
-
-@media screen and (max-width: 900px) {
-    .menu-icon {
-        display: block;
-        visibility: visible;
-    }
-    
-    .menu-text {
-        display: none;
-        visibility: hidden;
-    }
-}
-
 .main-menu-close-btn:hover {
     color: #e8f0f5;
 }
 
-.menu-icon:hover {
-    filter: brightness(1.5);
+.main-menu-open-btn {
+    background-color: transparent;
+    border-color: transparent;
+    
+    margin: 0;
+    padding: 0;
+
+    position: fixed;
+    top: 3vh;
+    right: 3vh;
+}
+
+.main-menu-button-icon {
+    width: 6vh;
+    height: 6vh;
 }
