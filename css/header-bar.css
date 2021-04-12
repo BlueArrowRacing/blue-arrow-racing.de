@@ -66,14 +66,27 @@
     margin-right: auto;
 }
 
+.main-menu-wordmark {
+    transition: -webkit-filter 1s, -ms-filter 1s, filter 1s, scale 0.5s;
+}
+
 .main-menu-wordmark:hover {
     -webkit-filter: drop-shadow(4px 4px 4px #17242ea0);
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=4, Color='#17242e')";
-    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=4, Color='#17242e')"
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=4, Color='#17242e')";
+    scale: 1.1;
+}
+
+.main-menu-entry, .main-menu-close-btn {
+    transition: text-shadow 1s, scale 0.5s;
 }
 
 .main-menu-entry:hover, .main-menu-close-btn:hover {
     text-shadow: 4px 4px 4px #17242ea0;
+}
+
+.main-menu-entry:hover {
+    scale: 1.1;
 }
 
 .main-menu-close-btn {
