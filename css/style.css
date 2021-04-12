@@ -36,6 +36,7 @@ a.no-hover-colorfx:hover {
 h1 {
     font-size: 2.1em;
     font-weight: bold;
+    margin-top: 1em;
 }
 
 h1.underline {
@@ -45,6 +46,8 @@ h1.underline {
 h2 {
     font-size: 1.5em;
     font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0;
 }
 
 h2.underline {
@@ -54,11 +57,15 @@ h2.underline {
 h3 {
     font-size: 1.2em;
     font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0;
 }
 
 h4 {
     font-size: 1.2em;
     font-weight: normal;
+    margin-top: 1em;
+    margin-bottom: 0;
 }
 
 blockquote {
@@ -184,24 +191,28 @@ img.small {
     width: 40%;
     height: auto;
     display: block;
+    margin-top: 0.5em;
 }
 
 img.medium {
     width: 60%;
     height: auto;
     display: block;
+    margin-top: 0.5em;
 }
 
 img.big {
     width: 80%;
     height: auto;
     display: block;
+    margin-top: 0.5em;
 }
 
 img.full {
     width: 100%;
     height: auto;
     display: block;
+    margin-top: 0.5em;
 }
 
 /* END General */
