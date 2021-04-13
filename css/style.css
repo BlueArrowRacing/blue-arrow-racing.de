@@ -327,6 +327,28 @@ img.full {
 
 /* END Artikel */
 
+/* BEGIN Sponsor Werden */
+
+.sponsors-members-grid {
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 1em;
+}
+
+.sponsors-member > p {
+    text-align: left;
+}
+
+.sponsors-member-photo {
+    width: 100%;
+    height: auto;
+}
+
+/* END Sponsor Werden */
+
 /* BEGIN Über uns */
 
 /* begin desktop */
