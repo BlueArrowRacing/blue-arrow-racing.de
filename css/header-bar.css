@@ -67,7 +67,7 @@
 }
 
 .main-menu-wordmark {
-    transition: -webkit-filter 1s, -ms-filter 1s, filter 1s, scale 0.5s;
+    transition: -webkit-filter 0.7s, -ms-filter 0.7s, filter 0.7s, scale 0.3s;
 }
 
 .main-menu-wordmark:hover {
@@ -78,7 +78,7 @@
 }
 
 .main-menu-entry, .main-menu-close-btn {
-    transition: text-shadow 1s, scale 0.5s;
+    transition: text-shadow 0.7s, scale 0.3s;
 }
 
 .main-menu-entry:hover, .main-menu-close-btn:hover {
