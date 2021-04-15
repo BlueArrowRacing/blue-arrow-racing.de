@@ -358,6 +358,14 @@ img.full {
     column-gap: 1em;
 }
 
+@media screen and (max-width: 900px) {
+    .sponsors-members-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        row-gap: 2em;
+    }
+}
+
 .sponsors-category-photo {
     width: 100%;
 }
