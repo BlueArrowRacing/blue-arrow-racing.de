@@ -160,6 +160,7 @@ hr.dashed {
 
 .smaller-text {
     font-size: smaller;
+    margin: 0;
 }
 
 .small-icon {
@@ -340,11 +341,25 @@ img.full {
 
 .sponsors-member > p {
     text-align: left;
+    margin: 0;
 }
 
 .sponsors-member-photo {
     width: 100%;
     height: auto;
+}
+
+.sponsors-categories-grid {
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 1em;
+}
+
+.sponsors-category-photo {
+    width: 100%;
 }
 
 /* END Sponsor Werden */
