@@ -1,0 +1,86 @@
+﻿model-viewer {
+    height: 50vh;
+    width: auto;
+}
+
+.Hotspot {
+    background: #fff;
+    border-radius: 32px;
+    border: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 24px;
+    padding: 8px;
+    position: relative;
+    transition: opacity 0.3s;
+    width: 24px;
+}
+
+    .Hotspot:not([data-visible]) {
+        background: transparent;
+        border: 4px solid #fff;
+        box-shadow: none;
+        height: 32px;
+        pointer-events: none;
+        width: 32px;
+    }
+
+    .Hotspot:focus {
+        border: 4px solid rgb(0, 128, 200);
+        height: 32px;
+        outline: none;
+        width: 32px;
+    }
+
+    .Hotspot > * {
+        opacity: 1;
+        transform: translateY(-50%);
+    }
+
+.HotspotAnnotation {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(0, 0, 0, 0.8);
+    display: block;
+    font-family: Futura, Helvetica Neue, sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    left: calc(100% + 1em);
+    max-width: 128px;
+    overflow-wrap: break-word;
+    padding: 0.5em 1em;
+    position: absolute;
+    top: 50%;
+    width: auto;
+}
+
+.Hotspot:not([data-visible]) > * {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(calc(-50% + 4px));
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%; /* ratio 16x9 */
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+    .embed-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* ratio 4x3 */
+    .embed-container.ratio4x3 {
+        padding-bottom: 75%;
+    }
