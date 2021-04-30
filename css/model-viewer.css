@@ -84,3 +84,15 @@
     .embed-container.ratio4x3 {
         padding-bottom: 75%;
     }
+
+    #controls {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    max-width: unset;
+    transform: unset;
+  }
+
+.hidden {
+    display: none;
+}
